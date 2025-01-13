@@ -1,5 +1,10 @@
+:root {
+   --highlight-color: darkblue;
+
+}
+
 nav {
-   background-color: darkblue;
+   background-color: var(--highlight-color);
    padding: 10px;
 }
 
@@ -10,7 +15,7 @@ nav a {
 }
 
 h1 {
-   color: darkblue;
+   color: var(--highlight-color);
 }
 
 main img {
