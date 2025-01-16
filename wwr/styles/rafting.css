@@ -98,13 +98,27 @@
    margin-top: 20px; 
 }
 
+.image-gallery figure {
+  margin: 0; /* Removes default margin around the figure */
+  width: calc(20% - 10px); /* Responsive width for images */
+  text-align: center; /* Centers the caption below the image */
+}
+
+.image-gallery figcaption {
+  margin-top: 5px; /* Adds space between the image and caption */
+  font-size: 0.9em;
+  color: var(--text-color); /* Matches the site's text color */
+  font-style: italic;
+}
+
 /* Individual images in the gallery */
- .image-gallery img {
-   width: calc(20% - 10px); 
-   height: auto;
-   border-radius: 5px; 
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-   transition: transform 0.3s ease; 
+.image-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 /* Hover effect for images */
