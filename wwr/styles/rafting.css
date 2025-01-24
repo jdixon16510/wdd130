@@ -308,8 +308,6 @@ footer nav.sociallinks img:hover {
   text-decoration: underline;
 }
 
-
-
 .map-container {
   flex: 1;
   max-width: 500px;
@@ -376,5 +374,29 @@ footer nav.sociallinks img:hover {
 .contact-form button:hover {
   background-color: var(--accent-color);
 }
+
+.contact-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.contact-form .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
   
 
