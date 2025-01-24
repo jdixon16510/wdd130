@@ -21,6 +21,7 @@ body {
 header {
   background-color: var(--section-background-color);
   margin: 20px auto;
+  margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
@@ -70,6 +71,26 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 0;
+}
+
+/* Section Styling */
+section {
+  margin-top: 20px;
+  border: 2px solid var(--primary-color); /* Add a border around the section */
+  border-radius: 10px; /* Round the corners */
+  background-color: var(--section-background-color); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */ 
+}
+ 
+section h2 {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 20px;
 }
  
 /* Hero Section */
@@ -193,26 +214,6 @@ border-radius: 10px; /* Round the corners */
 }
 
  
-/* Section Styling */
-section {
-  margin-top: 20px;
-  border: 2px solid var(--primary-color); /* Add a border around the section */
-  border-radius: 10px; /* Round the corners */
-  background-color: var(--section-background-color); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */ 
-}
- 
-section h2 {
-  color: var(--text-color);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-section p {
-  margin-bottom: 20px;
-}
-
-
 /* Footer */
 footer {
   background-color: var(--section-background-color);
@@ -261,6 +262,119 @@ footer nav.sociallinks img:hover {
 
 .social-icon:hover {
   transform: scale(1.1);
+}
+
+/* Contact Page */
+
+/* Company Info Section */
+.company-info {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.company-info address {
+  flex: 1;
+  font-style: normal;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+.company-info address a {
+  color: #033c79;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.company-info address a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+
+
+.map-container {
+  flex: 1;
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Google Map Styling */
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.employee-profiles figure {
+  text-align: center;
+}
+
+.employee-profiles img {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent-color);
 }
   
 
