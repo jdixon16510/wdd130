@@ -386,7 +386,7 @@ footer nav.sociallinks img:hover {
 }
 
 .contact-form {
-  max-width: auto;
+  max-width: 100%;
 }
 
 .contact-form .form-group {
