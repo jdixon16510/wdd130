@@ -419,5 +419,145 @@ fieldset legend {
   resize: vertical;
 }
 
+/* Newsletter Section */
+.newsletter {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: var(--section-background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.newsletter-form input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Image Carousel */
+.carousel {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+
+/* Highlights Section Grid Styling */
+.highlights {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.highlights h2 {
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid layout */
+  gap: 20px; /* Spacing between grid items */
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: var(--section-background-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.grid-item p {
+  color: var(--text-color);
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Slight scaling effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
   
 
