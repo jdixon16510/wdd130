@@ -1,23 +1,23 @@
 /* Define CSS variables for the color scheme */
 :root {
-  --primary-color: #6399BB; /* Dark blue for headings and accents */
-  --secondary-color: #90E0EF; /* Light blue for backgrounds */
+  --primary-color: #6399bb; /* Dark blue for headings and accents */
+  --secondary-color: #90e0ef; /* Light blue for backgrounds */
   --text-color: #333333; /* Dark gray for text */
   --background-color: #f5f5f5; /* Light gray background */
-  --accent-color: #D5C334; /* Yellow for highlights */
+  --accent-color: #d5c334; /* Yellow for highlights */
   --section-background-color: rgba(189, 233, 220, 0.5);
 }
- 
+
 /* General Reset */
 body {
   margin: 0;
-  font-family: 'Raleway', 'Roboto', sans-serif;
+  font-family: "Raleway", "Roboto", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
 }
- 
- /* Header */
+
+/* Header */
 header {
   background-color: var(--section-background-color);
   margin: 20px auto;
@@ -38,29 +38,28 @@ header {
   margin: 0 0.25rem 0 1rem;
   width: 100px;
   height: auto;
-  
 }
 
 .navigation {
-	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .navigation li {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
   /* justify-content: space-around; */
   /* justify-content: space-between; */
 }
 
 .navigation a {
-	display: block;
-	color: var(--text-color);
-	padding: 10px;
+  display: block;
+  color: var(--text-color);
+  padding: 10px;
   margin: 0 10px;
   font-weight: bold;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .navigation a:focus {
@@ -68,11 +67,11 @@ header {
 }
 
 .navigation a:hover {
-	color: var(--accent-color);
-	text-decoration: underline;
+  color: var(--accent-color);
+  text-decoration: underline;
 }
- 
- /* Main Content Styling */
+
+/* Main Content Styling */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -85,10 +84,10 @@ section {
   margin-top: 20px;
   border: 2px solid var(--primary-color); /* Add a border around the section */
   border-radius: 10px; /* Round the corners */
-  background-color: var(--section-background-color); 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */ 
+  background-color: var(--section-background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
- 
+
 section h2 {
   color: var(--text-color);
   text-align: center;
@@ -98,13 +97,13 @@ section h2 {
 section p {
   margin-bottom: 20px;
 }
- 
+
 /* Hero Section */
 .hero {
   position: relative;
   text-align: center;
   border: 2px solid var(--primary-color); /* Add a border around the section */
-border-radius: 10px; /* Round the corners */
+  border-radius: 10px; /* Round the corners */
 }
 
 .hero img {
@@ -121,7 +120,7 @@ border-radius: 10px; /* Round the corners */
   transform: translate(-50%, -50%);
   color: white;
   font-size: 3em;
-  font-family: 'Bungee Spice', sans-serif;
+  font-family: "Bungee Spice", sans-serif;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
@@ -182,25 +181,25 @@ border-radius: 10px; /* Round the corners */
 
 /* Image gallery container */
 .image-gallery {
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 10px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   margin-top: 20px;
 }
 
 .image-gallery figure {
-  margin: 0; 
-  width: calc(20% - 20px); 
-  text-align: center; 
+  margin: 0;
+  width: calc(20% - 20px);
+  text-align: center;
 }
 
 .image-gallery figcaption {
   margin-top: 5px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
   font-size: 0.9em;
-  color: var(--text-color); 
+  color: var(--text-color);
   font-style: italic;
 }
 
@@ -215,11 +214,10 @@ border-radius: 10px; /* Round the corners */
 }
 
 /* Hover effect for images */
- .image-gallery img:hover {
-   transform: scale(1.05); 
+.image-gallery img:hover {
+  transform: scale(1.05);
 }
 
- 
 /* Footer */
 footer {
   background-color: var(--section-background-color);
@@ -482,8 +480,6 @@ fieldset legend {
   background-color: var(--accent-color);
 }
 
-
-
 /* Highlights Section Grid Styling */
 .highlights {
   margin-top: 20px;
@@ -497,7 +493,10 @@ fieldset legend {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible grid layout */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Flexible grid layout */
   gap: 20px; /* Spacing between grid items */
   padding: 20px;
 }
@@ -559,7 +558,6 @@ fieldset legend {
   opacity: 1;
 }
 
-
 /* Call to Action */
 .cta {
   text-align: center;
@@ -587,7 +585,6 @@ fieldset legend {
   background-color: var(--accent-color);
 }
 
-
 /* Trip Table */
 .trip-table {
   max-width: 800px;
@@ -603,7 +600,8 @@ fieldset legend {
   border-collapse: collapse;
 }
 
-.trip-table th, .trip-table td {
+.trip-table th,
+.trip-table td {
   padding: 10px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -617,7 +615,3 @@ fieldset legend {
 .trip-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
-
-
-  
-

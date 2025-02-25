@@ -1,100 +1,150 @@
 <!DOCTYPE html>
 <html lang="en-US">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <title>Home | Dry Oar Adventures</title>
-      <meta name="description" content="Home page for Dry Oar Adventures Website">
-      <meta name="author" content="Joseph Dixon">
-      <link rel="stylesheet" href="styles/rafting.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-      <script src="scripts/slider.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Home | Dry Oar Adventures</title>
+    <meta
+      name="description"
+      content="Home page for Dry Oar Adventures Website"
+    />
+    <meta name="author" content="Joseph Dixon" />
+    <link rel="stylesheet" href="styles/rafting.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/slider.js"></script>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/dryoarlogo.png" alt="Dry Oar" />
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <img
+          src="images/rafting12_1024.webp"
+          alt="Dry Oar Adventures Hero Image"
+        />
+        <h1>Experience the Thrill of Adventure</h1>
+        <article>
+          <p>
+            Embark on a white-water rafting journey like no other. Our
+            experienced guides, breathtaking river locations, and
+            state-of-the-art equipment guarantee an unforgettable adventure.
+            Join us and make memories that will last a lifetime!
+          </p>
+          <a href="trips.html" class="cta-link">Explore Our Trips</a>
+        </article>
+      </div>
+      <section class="newsletter">
+        <h2>Join Our Adventure Community</h2>
+        <form action="#" method="post" class="newsletter-form">
+          <label for="name">Sign up for updates and special offers:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
 
-   </head>
-   <body>
-      <header>
-         <img class="logo" src="images/dryoarlogo.png" alt="Dry Oar">
-         <nav>
-            <ul class="navigation">
-               <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li><a href="trips.html">Trips</a></li>
-               <li><a href="contact.html">Contact Us</a></li>
-             </ul>        
-         </nav>   
-      </header>
-      <main>
-         <div class="hero">
-            <img src="images/rafting12_1024.webp" alt="Dry Oar Adventures Hero Image">
-            <h1>Experience the Thrill of Adventure</h1>
-            <article>
-               <p>Embark on a white-water rafting journey like no other. Our experienced guides, breathtaking river locations, and state-of-the-art equipment guarantee an unforgettable adventure. Join us and make memories that will last a lifetime!</p>
-               <a href="trips.html" class="cta-link">Explore Our Trips</a>
-            </article>
-         </div>
-         <section class="newsletter">
-            <h2>Join Our Adventure Community</h2>
-            <form action="#" method="post" class="newsletter-form">
-               <label for="name">Sign up for updates and special offers:</label>
-               <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
 
-               
-               <input type="email" id="email" name="email" placeholder="Enter your email" required>
-               <button type="submit">Subscribe</button>
-            </form>
-         </section>
-         
-         <section class="highlights">
-            <h2>Why Choose Dry Oar Adventures?</h2>
-            <div class="grid-container">
-               <div class="grid-item">
-                  <div class="carousel">
-                     <img src="images/guide-team.webp" alt="Experienced Guides">
-                     <img src="images/team-bonding.webp" alt="Team Bonding">
-                     <img src="images/thrilling-rapids.webp" alt="Thrilling Rapids">
-                  </div>
-                  <h3>Experienced Guides</h3>
-                  <p>Our guides are trained professionals who prioritize safety and fun.</p>
-               </div>
-               <div class="grid-item">
-                  <div class="carousel">
-                     <img src="images/grand-canyon.webp" alt="Breathtaking Locations">
-                     <img src="images/snake-river.webp" alt="Mountain Views">
-                     <img src="images/sunset-rides.webp" alt="Sunset Rides">
-                  </div>
-                  <h3>Breathtaking Locations</h3>
-                  <p>We offer trips on some of the most scenic rivers in the Rocky Mountains.</p>
-               </div>
-               <div class="grid-item">
-                  <div class="carousel">
-                     <img src="images/equipment.webp" alt="State-of-the-Art Equipment">
-                     <img src="images/premium-rafts.webp" alt="Premium Rafts">
-                     <img src="images/safety-equipment.webp" alt="Safety Gear">
-                  </div>
-                  <h3>State-of-the-Art Equipment</h3>
-                  <p>Top-quality rafts and gear to ensure your comfort and safety.</p>
-               </div>
+      <section class="highlights">
+        <h2>Why Choose Dry Oar Adventures?</h2>
+        <div class="grid-container">
+          <div class="grid-item">
+            <div class="carousel">
+              <img src="images/guide-team.webp" alt="Experienced Guides" />
+              <img src="images/team-bonding.webp" alt="Team Bonding" />
+              <img src="images/thrilling-rapids.webp" alt="Thrilling Rapids" />
             </div>
-         </section>
-      
-      </main>
-      <footer>
-         <p>&copy;2025 Dry Oar Adventures | Designed by Joseph Dixon</p>
-         <nav class="sociallinks">
-            <a href="https://facebook.com" target="_blank" aria-label="Visit us on Facebook">
-              <img src="images/4-Facebook-64.webp" alt="Facebook Icon" class="social-icon">
-            </a>
-            <a href="https://x.com" target="_blank" aria-label="Visit us on X">
-              <img src="images/X-64.webp" alt="X Icon" class="social-icon">
-            </a>
-            <a href="https://instagram.com" target="_blank" aria-label="Visit us on Instagram">
-              <img src="images/instagram_icon-instagram_buttoninstegram-64.webp" alt="Instagram Icon" class="social-icon">
-            </a>
-         </nav> 
-      </footer>
-   </body>
-   <!-- Revised date 2 February 2025 -->
+            <h3>Experienced Guides</h3>
+            <p>
+              Our guides are trained professionals who prioritize safety and
+              fun.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="carousel">
+              <img
+                src="images/grand-canyon.webp"
+                alt="Breathtaking Locations"
+              />
+              <img src="images/snake-river.webp" alt="Mountain Views" />
+              <img src="images/sunset-rides.webp" alt="Sunset Rides" />
+            </div>
+            <h3>Breathtaking Locations</h3>
+            <p>
+              We offer trips on some of the most scenic rivers in the Rocky
+              Mountains.
+            </p>
+          </div>
+          <div class="grid-item">
+            <div class="carousel">
+              <img
+                src="images/equipment.webp"
+                alt="State-of-the-Art Equipment"
+              />
+              <img src="images/premium-rafts.webp" alt="Premium Rafts" />
+              <img src="images/safety-equipment.webp" alt="Safety Gear" />
+            </div>
+            <h3>State-of-the-Art Equipment</h3>
+            <p>Top-quality rafts and gear to ensure your comfort and safety.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2025 Dry Oar Adventures | Designed by Joseph Dixon</p>
+      <nav class="sociallinks">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          aria-label="Visit us on Facebook"
+        >
+          <img
+            src="images/4-Facebook-64.webp"
+            alt="Facebook Icon"
+            class="social-icon"
+          />
+        </a>
+        <a href="https://x.com" target="_blank" aria-label="Visit us on X">
+          <img src="images/X-64.webp" alt="X Icon" class="social-icon" />
+        </a>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          aria-label="Visit us on Instagram"
+        >
+          <img
+            src="images/instagram_icon-instagram_buttoninstegram-64.webp"
+            alt="Instagram Icon"
+            class="social-icon"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+  <!-- Revised date 2 February 2025 -->
 </html>
-
